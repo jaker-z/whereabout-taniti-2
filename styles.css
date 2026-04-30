@@ -1,0 +1,653 @@
+/*
+    Site Colors:
+    1. 214B5B (Dark Ocean)
+    2. 3BA5B8 (Ocean)
+    3. 70C2D0 (Light Ocean)
+    4. F0F06D (Mellow Yellow)
+
+    also. BCDADF (Grey)
+    also. BEE4D7 (Gray)
+
+
+    Shadows:
+    (Lighter) 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    (Darker)
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+
+    Hover Transition:
+    transition: box-shadow 0.3s ease;
+
+
+    TODO:
+        -put real images on attractions/transportation/booking cards 
+         with background-image: url();
+
+*/
+
+
+
+
+
+body {
+    margin: 0 auto;
+    color: white;
+    background-color: #3BA5B8;
+    font-family: Comfortaa, sans-serif;
+    background-repeat: no-repeat;
+    
+}
+
+.easy-link:link {
+    color: #f6f5ec;
+    text-decoration: none;
+}
+
+.easy-link:visited {
+    color: #f6f5ec;
+}
+
+.easy-link:hover {
+    color: #e3dcd2ff;
+}
+
+.easy-link:active {
+    color: #e3dcd2ff;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+    a:visited {
+        color: white;
+    }
+
+h1 {
+    font-family: "Funnel Display", sans-serif;
+    font-size: 60pt;
+    font-style: normal;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Funnel Display", sans-serif;
+    font-size: 48pt;
+    font-style: normal;
+    margin: 0;
+}
+
+h3 {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+}
+
+h4 {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    font-size: 12pt;
+    line-height: 1.5;
+}
+
+input, textarea {
+    font-family: Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+.in-text {
+    background-color: #3BA5B8;
+    border-radius: 20px;
+    padding: 2px 8px;
+}
+
+
+/* SPECIFIC RULES --------------------------------------------------------- */
+
+#full-nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 880px; /* Specifying "max" removes the bottom scroll bar. */
+    margin: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    height: 75px;
+    align-items: center;
+}
+
+#left-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#right-nav {
+    display: flex;
+    background-color: #F0F06D;
+    border-radius: 20px;
+    justify-content: center;
+    color: #214B5B;
+    padding: 10px 30px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+    #right-nav:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #right-nav:active {
+        opacity: 0.8;
+    }
+
+.easy-link {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.responsive-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+    .responsive-card:hover {
+        transform: translateY(-10px); /* Moves card up 10px */
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Deepens shadow */
+    }
+    .responsive-card:active {
+        opacity: 0.8;
+    }
+
+.responsive-card2 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+    .responsive-card2:hover {
+        transform: translateY(-10px); /* Moves card up 10px */
+        text-decoration: underline;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Deepens shadow */
+    }
+
+    .responsive-card2:active {
+        opacity: 0.8;
+    }
+
+#cover-pic-container {
+    display: flex;
+    justify-content: center;
+    background-image: url('images/benedikt-brichta.jpg');
+    background-size: 1920px;
+    background-position: center center;
+    height: 600px;
+}
+
+.cover-pic-title {
+    display: flex;
+    flex-direction: column;
+    padding-top: 160px;
+}
+
+.card-button {
+    margin: auto;
+    background-color: #3BA5B8;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 150px;
+    padding: 2px 4px;
+    text-align: center;
+    color: white;
+}
+    .card-button:hover {
+        opacity: 0.8;
+    }
+
+.about-options-card {
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #3BA5B8;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+    .about-options-card:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+.about-options-card-p {
+    padding: 20px 60px;
+}
+
+
+/* Home rules ---------------------------------------------------------- */
+
+.cover-pic-title-home {
+    display: flex;
+    flex-direction: column;
+    padding-top: 172px; /* This specific number is controlling where the title font lands */
+    gap: 20px;
+}
+
+#book-now-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20pt;
+    width: 200px;
+    height: 50px;
+    border: 4px solid white;
+    background-color: #d9d9d930;
+}
+
+    #book-now-button:hover {
+        opacity: 0.8;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #book-now-button:active {
+        opacity: 0.3;
+    }
+
+#home-cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 960px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.home-card {
+    overflow: hidden;
+    width: 275px;
+    border-radius: 10px;
+    background-color: #70C2D0;
+    text-align: center;
+}
+
+.home-card-img {
+    background-color: #D9D9D9;
+/*    background-image: url('images/jakob-owens.jpg');*/
+/*    background-size: auto 300px;*/
+    height: 400px;
+    background-position: center center;
+}
+
+#welcome-paragraph {
+    background-color: #70C2D0;
+    border-radius: 15px;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 20px 40px;
+    line-height: 1.5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+    #welcome-paragraph:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+
+.img1 {
+    background-image: url('images/clinton-mwebaze.jpg');
+    background-size: auto 400px;
+}
+.img2 {
+    background-image: url('images/vojtech-bruzek.jpg');
+    background-size: auto 400px;
+}
+.img3 {
+    background-image: url('images/macarena-ollarzu.jpg');
+    background-size: auto 400px;
+}
+
+
+/* Attractions rules --------------------------------------------------- */
+
+#attractions-cards-container {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.attractions-card {
+    display: flex;
+    background-color: #70C2D0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.attractions-card-p {
+    width: 420px;
+    padding: 20px 40px;
+}
+
+.attractions-card-img {
+    width: 380px;
+    background-color: #D9D9D9;
+    background-image: url('images/jakob-owens.jpg');
+    background-size: 350px;
+    background-position: center center;
+}
+
+.img4 {
+    background-image: url('images/rowan-heuvel.jpg');
+    background-size: auto 271px;
+}
+
+.img5 {
+    background-image: url('images/clinton-mwebaze.jpg');
+    background-size: 340.09px auto;
+}
+
+.img6 {
+    background-image: url('images/zalfa-imani.jpg');
+    background-size: auto 271px;
+}
+.img7 {
+    background-image: url('images/matej-buchla.jpg');
+    background-size: auto 271px;
+}
+
+.img8 {
+    background-image: url('images/royce-fonseca.jpg');
+    background-size: auto 247px;
+}
+
+.img9 {
+    background-image: url('images/bridger-bowcutt.jpg');
+    background-size: 340.09px auto;
+}
+.img10 {
+    background-image: url('images/katherine-sousa.jpg');
+    background-size: auto 271px;
+}
+
+.img11 {
+    background-image: url('images/amit-phadte.jpg');
+    background-size: auto 271px;
+}
+
+
+/* Transportation rules ------------------------------------------------ */
+
+#transportation-cards-container {
+    margin: auto;
+    margin-top: 60px;
+}
+
+.transportation-subcontainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.transportation-card {
+    width: 400px;
+    background-color: #70C2D0;
+    border-top: 4px solid white;
+    border-radius: 10px;
+}
+
+.transportation-card-p {
+    padding: 20px 40px;
+}
+
+.icon-headings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.bus-icon {
+    width: 20px;
+    fill: white;
+}
+
+.car-icon {
+    width: 26px;
+    fill: white;
+}
+
+.bike-icon {
+    width: 28px;
+    fill: white;
+}
+
+.walk-icon {
+    width: 28px;
+    fill: white;
+}
+
+
+/* Contact Rules -------------------------------------------------------- */
+
+/*#contact-form {
+    width: 500px;
+    background-color: #70C2D0;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding: 40px 40px;
+    font-family: "Comfortaa", sans-serif;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}*/
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#contact-about {
+    width: 320px;
+    background-color: #70C2D0;
+    border-radius: 10px;
+    padding-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+    #contact-about:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+#contact-about-p {
+    padding: 20px 40px;
+    
+}
+
+#contact-form {
+    width: 480px;
+    background-color: #70C2D0;
+    border-radius: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+    #contact-form:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+#form-components {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#top-input {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+#fname, #lname {
+    height: 25px;
+    border: 1px solid #214B5B;
+}
+
+.email-message {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 388px; /* This is directly affected by fname and lname having a default width of 184 each + the 20 gap */
+    margin: auto;
+}
+
+#email {
+    height: 25px;
+    border: 1px solid #214B5B;
+}
+
+input[type=text]:focus, textarea:focus {
+    border: 6px solid #214B5B;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    outline: none;
+}
+
+#message {
+    height: 100px;
+    border: 1px solid #214B5B;
+}
+
+#contact-submit {
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    /*margin-top: 20px;*/
+    background-color: #F0F06D;
+    color: #214B5B;
+    font-size: 18pt;
+    border: none;
+    border-radius: 20px;
+    transition: width 0.4s ease, box-shadow 0.3s ease;
+}
+    #contact-submit:hover {
+        width: 160px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    #contact-submit:active {
+        opacity: 0.8;
+    }
+
+
+/* About rules ------------------------------------------------------------ */
+
+#about-cards-container {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*gap: 20px;*/
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.about-card {
+    background-color: #70C2D0;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+    .about-card:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+.about-card-p {
+    padding: 20px 40px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+.left-card {
+    border-left: 4px solid white;
+}
+
+.right-card {
+    border-right: 4px solid white;
+} 
+
+.bottom-card {
+    border-bottom: 4px solid white;
+}
+
+.top-card {
+    border-top: 4px solid white;
+}
+
+/* Booking rules ---------------------------------------------------------- */
+
+#booking-cards-container {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.booking-card {
+    display: flex;
+    background-color: #70C2D0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.booking-card-p {
+    width: 420px;
+    padding: 20px 40px;
+}
+
+.booking-card-img {
+    width: 380px;
+    background-color: #D9D9D9;
+    background-image: url('images/jakob-owens.jpg');
+    background-size: 350px;
+    background-position: center center;
+}
+
+.info-icon {
+    width: 24px;
+}
+
+.img12 {
+    background-image: url('images/luna-kay.jpg');
+    background-size: 340.09px auto;
+}
+.img13 {
+    background-image: url('images/vojtech-bruzek.jpg');
+    background-size: auto 271px;
+}
+.img14 {
+    background-image: url('images/cory-bjork.jpg');
+    background-size: auto 300px;
+}
+.img15 {
+    background-image: url('images/marcus-loke.jpg');
+    background-size: auto 271px;
+}

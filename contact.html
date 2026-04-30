@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experience Taniti</title>
+    <link rel="icon" type="image/x-icon" href="images/taniti-logo.ico">
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div id="full-nav">
+            <nav id="left-nav">
+                <a href="index.html" class="easy-link">Home</a>
+                <a href="attractions.html" class="easy-link">Attractions</a>
+                <a href="transportation.html" class="easy-link">Transportation</a>
+                <a href="contact.html" class="easy-link">Contact</a>
+                <a href="about.html" class="easy-link">About</a>
+            </nav>
+            <a id="right-nav" href="booking.html">Booking</a>
+        </div>
+    </header>
+    <main>
+
+        <section id="cover-pic-container">
+            <div class="cover-pic-title">
+                <h2>Contact us</h2>
+            </div>
+        </section>
+
+        <div class="contact-container">
+            <aside id="contact-about" class="top-card">
+                <div id="contact-about-p">
+                    <h3>Questions?</h3>
+                    <p>Need extra help planning your vacation? Have more questions about Taniti? Feel free to fill out the information on the right and we'll get back to you as soon as we can.</p>
+                    <p>You can expect one of our teammembers to get back to you within 48 hours of submission.</p>
+                </div>
+            </aside>
+            <section id="contact-form" class="top-card">
+                <h3 style="text-align: center;">Send us a message</h3>
+                <form id="form-components" action="contact.html">
+                    <div id="top-input">
+                        <div>
+                            <!--style="margin-right: 10px;"-->
+                            <label for="fname">First name:</label><br />
+                            <input type="text" id="fname" name="fname">
+                        </div>
+                        <div>
+                            <!--style="margin-left: 10px;"-->
+                            <label for="lname">Last name:</label><br />
+                            <input type="text" id="lname" name="lname">
+                        </div>
+                    </div>
+                    <div class="email-message">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div class="email-message">
+                        <label for="email">Message:</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <div style="text-align: center;">
+                        <input id="contact-submit" type="submit" value="Submit">
+                    </div>
+                </form>
+            </section>
+        </div>
+
+    </main>
+</body>
+</html>          
